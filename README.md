@@ -1,58 +1,85 @@
 # Argo Aviation Referral Portal
 
-Ein professionelles Referral-Portal für Argo Aviation, entwickelt als Teil einer IHK-Abschlussarbeit.
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Flask](https://img.shields.io/badge/Flask-2.3-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
+[![Azure](https://img.shields.io/badge/Azure-Deployed-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-## 🚀 Quick Start
-
-1. **Setup ausführen:**
-   ```bash
-   python setup.py
-   ```
-
-2. **Anwendung starten:**
-   ```bash
-   # Linux/Mac:
-   source venv/bin/activate
-   # Windows:
-   venv\Scripts\activate.bat
-   
-   python app.py
-   ```
-
-## 📋 Features
-
-- ✅ Benutzerregistrierung und -authentifizierung
-- ✅ Rollenbasierte Zugriffskontrolle  
-- ✅ Responsive Design
-- ✅ Azure SQL Database Integration
-- ✅ CI/CD mit Azure DevOps
-
-## 🛠️ Technologie-Stack
-
-- **Backend:** Flask 2.3.3, SQLAlchemy, Flask-Login
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Datenbank:** Azure SQL Database
-- **Deployment:** Azure App Service
-- **CI/CD:** Azure DevOps
-
-## 📊 Projektfortschritt
-
-- [x] Infrastruktur Setup (95%)
-- [x] Backend-Architektur (80%)
-- [x] Frontend-Templates (70%)
-- [ ] Job-Listing-Management (30%)
-- [ ] Referral-System (25%)
-
-## 🔒 Sicherheit
-
-- Passwort-Hashing mit Werkzeug
-- CSRF-Schutz mit Flask-WTF
-- Session-Management mit Flask-Login
-- SQL-Injection-Schutz mit SQLAlchemy
-
-## 📞 Support
-
-Bei Fragen erstellen Sie ein Issue im GitHub-Repository.
+Ein professionelles **Mitarbeiter-Referral-Portal** fuer die Argo Aviation GmbH, entwickelt als IHK-Abschlussprojekt 2025.
 
 ---
-**Entwickelt für Argo Aviation | IHK-Abschlussarbeit 2025**# Railway deployment fix - Thu Oct  2 09:30:13 EDT 2025
+
+## Projektueberblick
+
+| Eigenschaft | Details |
+|---|---|
+| **Backend** | Python 3.11, Flask 2.3, SQLAlchemy |
+| **Frontend** | HTML5, CSS3, JavaScript, Jinja2 |
+| **Datenbank** | Azure SQL Database / SQLite (lokal) |
+| **Deployment** | Azure App Service, Docker, Railway |
+| **CI/CD** | Azure DevOps Pipelines |
+| **Kontext** | IHK-Abschlussarbeit 2025 |
+
+---
+
+## Features
+
+- Benutzerregistrierung und Authentifizierung mit sicherem Passwort-Hashing
+- Rollenbasierte Zugriffskontrolle (Mitarbeiter, HR, Admin)
+- Referral-Einreichung mit Lebenslauf-Upload
+- Status-Tracking in Echtzeit
+- HR-Dashboard fuer vollstaendige Verwaltung aller Empfehlungen
+- E-Mail-Benachrichtigungen bei Statusaenderungen
+- Responsive Design im Argo Aviation Corporate Design
+- Docker-Support fuer einfaches Deployment
+- Azure-Integration (Azure SQL, App Service, DevOps)
+
+---
+
+## Quick Start
+
+
+
+Die Anwendung ist dann unter http://localhost:5000 erreichbar.
+
+### Docker
+
+
+
+---
+
+## Sicherheitsfeatures
+
+| Feature | Implementierung |
+|---|---|
+| Passwort-Hashing | werkzeug.security |
+| CSRF-Schutz | Flask-WTF |
+| Session-Management | Flask-Login |
+| SQL-Injection-Schutz | SQLAlchemy ORM |
+
+---
+
+## Dokumentation
+
+| Dokument | Beschreibung |
+|---|---|
+| FINAL_PROJECT_REPORT.md | Vollstaendiger Projektbericht (DE) |
+| FINAL_PROJECT_REPORT_EN.md | Full Project Report (EN) |
+| DEVELOPMENT.md | Entwicklungsrichtlinien |
+| DOCKER_DEPLOYMENT.md | Docker-Deployment-Anleitung |
+| WINDOWS_SETUP.md | Windows-Setup-Anleitung |
+
+---
+
+## Autor
+
+**Tobias** - [@tib019](https://github.com/tib019)
+
+Entwickelt als **IHK-Abschlussarbeit 2025** fuer die Argo Aviation GmbH.
+
+---
+
+## Lizenz
+
+MIT License - siehe LICENSE fuer Details.
