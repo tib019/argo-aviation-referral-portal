@@ -28,7 +28,7 @@ MarkupSafe==2.1.5
 
 # HTTP Requests
 requests==2.32.3
-urllib3==2.2.2
+urllib3>=2.6.3
 certifi==2024.7.4
 charset-normalizer==3.3.2
 idna==3.7
