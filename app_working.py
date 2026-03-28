@@ -464,6 +464,6 @@ def init_db():
 if __name__ == '__main__':
     init_db()
  print("️ Argo Aviation Referral Portal gestartet!")
- print(" Admin Login: admin@argo-aviation.com / admin123")
- print(" URL: http://localhost:8000")
+ print("Admin Login: admin@argo-aviation.com / admin123")
+ print("URL: http://localhost:8000")
     app.run(host='0.0.0.0', port=8000, debug=False)
