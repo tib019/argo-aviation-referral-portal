@@ -18,7 +18,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///argo_referral.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # SendGrid configuration
-SENDGRID_API_KEY = "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"
+SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
 FROM_EMAIL = "noreply@argo-aviation.com"
 FROM_NAME = "Argo Aviation Referral Portal"
 

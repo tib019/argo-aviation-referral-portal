@@ -188,3 +188,6 @@ marimo/_lsp/
 __marimo__/
 # Force pipeline trigger Thu Oct  2 04:14:29 EDT 2025
 node_modules/
+
+*-env/
+argo-referral-env/
