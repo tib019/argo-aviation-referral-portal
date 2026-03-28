@@ -1,12 +1,12 @@
-# 🔧 Argo Aviation Referral Portal - Backend Wireframes & API Spezifikationen
+# Argo Aviation Referral Portal - Backend Wireframes & API Spezifikationen
 
-## 🎯 Übersicht
+## Übersicht
 
 Diese Dokumentation definiert die komplette Backend-Architektur für das Argo Aviation Referral Portal MVP. Sie umfasst API-Endpunkte, Datenbank-Schema, Geschäftslogik und Integrations-Spezifikationen.
 
 ---
 
-## 🗄️ **1. Erweiterte Datenbank-Schema Spezifikation**
+## ️ **1. Erweiterte Datenbank-Schema Spezifikation**
 
 ### **Bestehende Modelle (bereits implementiert):**
 
@@ -184,7 +184,7 @@ CREATE TABLE notification_queue (
 
 ---
 
-## 🔌 **2. API-Endpunkt Spezifikationen**
+## **2. API-Endpunkt Spezifikationen**
 
 ### **Authentifizierung & Benutzer-Management**
 
@@ -692,7 +692,7 @@ CREATE TABLE notification_queue (
 
 ---
 
-## ⚙️ **3. Geschäftslogik-Spezifikationen**
+## ️ **3. Geschäftslogik-Spezifikationen**
 
 ### **Referral-Workflow Engine**
 
@@ -788,7 +788,7 @@ USER_RANKING_SYSTEM = {
 
 ---
 
-## 🔗 **4. Externe Integrations-Spezifikationen**
+## **4. Externe Integrations-Spezifikationen**
 
 ### **Zoho ATS Integration**
 
@@ -848,7 +848,7 @@ PAYMENT_GATEWAY_CONFIG = {
 
 ---
 
-## 🔒 **5. Sicherheits-Spezifikationen**
+## **5. Sicherheits-Spezifikationen**
 
 ### **Authentifizierung & Autorisierung**
 
@@ -916,7 +916,7 @@ RATE_LIMITS = {
 
 ---
 
-## 📊 **6. Performance & Monitoring Spezifikationen**
+## **6. Performance & Monitoring Spezifikationen**
 
 ### **Caching-Strategie**
 
@@ -977,7 +977,7 @@ LOGGING_CONFIG = {
 
 ---
 
-## 🚀 **7. Deployment & DevOps Spezifikationen**
+## **7. Deployment & DevOps Spezifikationen**
 
 ### **Azure DevOps Pipeline**
 
@@ -1086,7 +1086,7 @@ PRODUCTION_CONFIG = {
 
 ---
 
-## 📋 **8. Testing-Spezifikationen**
+## **8. Testing-Spezifikationen**
 
 ### **Unit Tests**
 
@@ -1155,7 +1155,7 @@ TEST_CATEGORIES = {
 
 ---
 
-## 🔄 **9. Migration & Upgrade-Pfade**
+## **9. Migration & Upgrade-Pfade**
 
 ### **Datenbank-Migrationen**
 
@@ -1194,7 +1194,7 @@ API_VERSIONING = {
 
 ---
 
-## 📈 **10. Skalierungs-Spezifikationen**
+## **10. Skalierungs-Spezifikationen**
 
 ### **Horizontal Scaling**
 

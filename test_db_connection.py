@@ -26,8 +26,8 @@ try:
 
 except pyodbc.Error as ex:
     sqlstate = ex.args[0]
-    print(f"\n🚫 FEHLER BEIM VERBINDEN MIT PYODBC:")
+ print(f"\n FEHLER BEIM VERBINDEN MIT PYODBC:")
     print(f"SQLSTATE: {sqlstate}")
     print(f"Nachricht: {ex.args[1]}")
 except Exception as e:
-    print(f"\n🚫 Ein unerwarteter Fehler ist aufgetreten: {e}")
+ print(f"\n Ein unerwarteter Fehler ist aufgetreten: {e}")

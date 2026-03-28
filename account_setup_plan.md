@@ -181,18 +181,18 @@ GitHub provides robust version control, collaboration features, and integration 
 **Repository Structure**
 ```
 argo-aviation-referral-portal/
-├── app/
-│   ├── models/
-│   ├── views/
-│   ├── templates/
-│   └── static/
-├── config/
-├── migrations/
-├── tests/
-├── docs/
-├── requirements.txt
-├── app.py
-└── README.md
+ app/
+ models/
+ views/
+ templates/
+ static/
+ config/
+ migrations/
+ tests/
+ docs/
+ requirements.txt
+ app.py
+ README.md
 ```
 
 ### Azure DevOps Integration

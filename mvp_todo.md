@@ -1,6 +1,6 @@
 # MVP Todo List - Argo Aviation Referral Program
 
-## Phase 1: Analyse der Anforderungen und Architekturdiagramme ✅
+## Phase 1: Analyse der Anforderungen und Architekturdiagramme
 - [x] Analyse der Architekturdiagramme von Lee
 - [x] Verstehen der MVP-Anforderungen
 - [x] Identifikation der Hauptkomponenten

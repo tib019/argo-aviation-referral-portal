@@ -1,5 +1,5 @@
 
-# 🚀 Argo Aviation Referral Portal - Final Project Report
+# Argo Aviation Referral Portal - Final Project Report
 
 **Date:** 2025-10-02
 
@@ -13,7 +13,7 @@ While the application is fully functional in a local environment, challenges wer
 
 ## 2. Project Achievements
 
-### ✅ Functional Web Application
+### Functional Web Application
 
 A robust and user-friendly web application was developed using Python and Flask. The application features:
 
@@ -23,25 +23,25 @@ A robust and user-friendly web application was developed using Python and Flask.
 *   **Referral Submission:** A simple form for users to submit referrals for specific jobs.
 *   **Corporate Branding:** The application is styled with Argo Aviation GmbH's corporate colors and branding.
 
-### ✅ Professional Corporate Design
+### Professional Corporate Design
 
 The application features a clean and professional design that aligns with the corporate identity of Argo Aviation GmbH. The color scheme, typography, and layout were carefully chosen to provide a seamless user experience.
 
-### ✅ Sample Data
+### Sample Data
 
 The application includes sample data for jobs and an admin user, which allows for immediate demonstration and testing of the portal's features.
 
 ## 3. Deployment Status
 
-### Local Deployment (✅ Successful)
+### Local Deployment ( Successful)
 
 The application is fully functional and can be run locally on any machine with Python installed. The `app_working.py` script includes all necessary components and can be started with a single command.
 
-### Cloud Deployments (❌ Failed)
+### Cloud Deployments ( Failed)
 
 Attempts to deploy the application to Azure, Railway, and Vercel were unsuccessful due to various platform-specific issues and limitations of the sandboxed environment. The primary issues were related to build processes, dependency resolution, and network configurations.
 
-### Docker Containerization (❌ Failed)
+### Docker Containerization ( Failed)
 
 Attempts to create a Docker container for the application failed due to networking issues within the sandbox environment, which prevented the Docker daemon from accessing the necessary resources to build the image.
 

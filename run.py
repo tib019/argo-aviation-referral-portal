@@ -16,7 +16,7 @@ if not app.debug and os.environ.get('WEBSITE_SITE_NAME'):
     # Wir laufen in Azure App Service
     logging.basicConfig(level=logging.INFO)
     app.logger.setLevel(logging.INFO)
-    app.logger.info('🚀 Argo Aviation Referral Portal starting in Azure...')
+ app.logger.info(' Argo Aviation Referral Portal starting in Azure...')
     
     # Datenbank-Initialisierung für Azure
     with app.app_context():
@@ -27,10 +27,10 @@ if not app.debug and os.environ.get('WEBSITE_SITE_NAME'):
             
             # Erstelle Tabellen falls sie nicht existieren
             db.create_all()
-            app.logger.info('✅ Database initialized successfully')
+ app.logger.info(' Database initialized successfully')
             
         except Exception as e:
-            app.logger.error(f'❌ Database error: {e}')
+ app.logger.error(f' Database error: {e}')
 
 if __name__ == '__main__':
     # Lokale Entwicklung
@@ -38,4 +38,4 @@ if __name__ == '__main__':
 else:
     # Azure App Service
     if os.environ.get('WEBSITE_SITE_NAME'):
-        app.logger.info('🌐 Argo Aviation Referral Portal ready for production')
+ app.logger.info(' Argo Aviation Referral Portal ready for production')

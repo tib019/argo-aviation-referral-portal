@@ -437,7 +437,7 @@ recovered_*'''
 
 Ein professionelles Referral-Portal für Argo Aviation, entwickelt als Teil einer IHK-Abschlussarbeit.
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Setup ausführen:**
    ```bash
@@ -454,7 +454,7 @@ Ein professionelles Referral-Portal für Argo Aviation, entwickelt als Teil eine
    python app.py
    ```
 
-## 📋 Features
+## Features
 
 - ✅ Benutzerregistrierung und -authentifizierung
 - ✅ Rollenbasierte Zugriffskontrolle  
@@ -462,7 +462,7 @@ Ein professionelles Referral-Portal für Argo Aviation, entwickelt als Teil eine
 - ✅ Azure SQL Database Integration
 - ✅ CI/CD mit Azure DevOps
 
-## 🛠️ Technologie-Stack
+## ️ Technologie-Stack
 
 - **Backend:** Flask 2.3.3, SQLAlchemy, Flask-Login
 - **Frontend:** HTML5, CSS3, JavaScript
@@ -470,7 +470,7 @@ Ein professionelles Referral-Portal für Argo Aviation, entwickelt als Teil eine
 - **Deployment:** Azure App Service
 - **CI/CD:** Azure DevOps
 
-## 📊 Projektfortschritt
+## Projektfortschritt
 
 - [x] Infrastruktur Setup (95%)
 - [x] Backend-Architektur (80%)
@@ -478,14 +478,14 @@ Ein professionelles Referral-Portal für Argo Aviation, entwickelt als Teil eine
 - [ ] Job-Listing-Management (30%)
 - [ ] Referral-System (25%)
 
-## 🔒 Sicherheit
+## Sicherheit
 
 - Passwort-Hashing mit Werkzeug
 - CSRF-Schutz mit Flask-WTF
 - Session-Management mit Flask-Login
 - SQL-Injection-Schutz mit SQLAlchemy
 
-## 📞 Support
+## Support
 
 Bei Fragen erstellen Sie ein Issue im GitHub-Repository.
 

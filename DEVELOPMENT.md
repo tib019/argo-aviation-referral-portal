@@ -4,7 +4,7 @@
 
 Das Projekt wurde entsprechend der Wireframes umstrukturiert und erweitert:
 
-### ✅ Implementiert
+### Implementiert
 - **Authentifizierung**: Login/Register mit CSRF-Schutz
 - **Dashboard**: Rollenabhängige Ansichten (User/Superadmin)
 - **Job-Management**: Stellenausschreibungen durchsuchen und anzeigen
@@ -14,7 +14,7 @@ Das Projekt wurde entsprechend der Wireframes umstrukturiert und erweitert:
 - **Responsive Design**: Mobile-freundliche Templates
 - **Error-Handling**: 404, 403, 500 Error-Seiten
 
-### 🔄 Nächste Schritte
+### Nächste Schritte
 - Datei-Upload für Lebensläufe implementieren
 - E-Mail-Benachrichtigungen
 - Zoho ATS Integration
@@ -67,28 +67,28 @@ pytest tests/
 
 ```
 Argo-Referral-Portal/
-├── app/
-│   ├── __init__.py          # Flask App Factory
-│   ├── auth.py              # Authentifizierung (Login/Register)
-│   ├── main.py              # Haupt-Routen (Dashboard, Jobs, etc.)
-│   ├── api.py               # REST API Endpunkte
-│   ├── models/              # SQLAlchemy Modelle
-│   ├── templates/           # Jinja2 Templates
-│   │   ├── base.html        # Basis-Template
-│   │   ├── dashboard.html   # Dashboard
-│   │   ├── jobs.html        # Stellenausschreibungen
-│   │   ├── job_detail.html  # Job-Details
-│   │   ├── submit_referral.html # Referral-Submission
-│   │   ├── my_referrals.html # Meine Referrals
-│   │   ├── profile.html     # Benutzerprofil
-│   │   ├── admin_*.html     # Admin-Templates
-│   │   └── errors/          # Error-Seiten
-│   └── static/              # CSS, JS, Bilder
-├── migrations/              # Datenbank-Migrationen
-├── tests/                   # Unit-Tests
-├── config.py               # Konfiguration
-├── requirements.txt        # Python-Dependencies
-└── run.py                  # Anwendungs-Entry-Point
+ app/
+ __init__.py # Flask App Factory
+ auth.py # Authentifizierung (Login/Register)
+ main.py # Haupt-Routen (Dashboard, Jobs, etc.)
+ api.py # REST API Endpunkte
+ models/ # SQLAlchemy Modelle
+ templates/ # Jinja2 Templates
+ base.html # Basis-Template
+ dashboard.html # Dashboard
+ jobs.html # Stellenausschreibungen
+ job_detail.html # Job-Details
+ submit_referral.html # Referral-Submission
+ my_referrals.html # Meine Referrals
+ profile.html # Benutzerprofil
+ admin_*.html # Admin-Templates
+ errors/ # Error-Seiten
+ static/ # CSS, JS, Bilder
+ migrations/ # Datenbank-Migrationen
+ tests/ # Unit-Tests
+ config.py # Konfiguration
+ requirements.txt # Python-Dependencies
+ run.py # Anwendungs-Entry-Point
 ```
 
 ## Konfiguration

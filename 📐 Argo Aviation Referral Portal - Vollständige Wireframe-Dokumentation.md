@@ -1,6 +1,6 @@
-# 📐 Argo Aviation Referral Portal - Vollständige Wireframe-Dokumentation
+# Argo Aviation Referral Portal - Vollständige Wireframe-Dokumentation
 
-## 🎯 Executive Summary
+## Executive Summary
 
 Diese umfassende Wireframe-Dokumentation definiert die komplette Architektur und Benutzererfahrung für das Argo Aviation Referral Portal MVP. Sie umfasst detaillierte Frontend-Wireframes, Backend-API-Spezifikationen und User Journey Storyboards, die als Grundlage für die vollständige Implementierung dienen.
 
@@ -18,24 +18,24 @@ Diese umfassende Wireframe-Dokumentation definiert die komplette Architektur und
 
 ---
 
-## 📋 **1. Wireframe-Komponenten Übersicht**
+## **1. Wireframe-Komponenten Übersicht**
 
 ### **Frontend-Wireframes (Abgeschlossen)**
 
 #### **Bereits implementierte Seiten:**
-✅ **Login-Seite**
+ **Login-Seite**
 - Moderne, responsive Authentifizierung
 - CSRF-Schutz implementiert
 - Superadmin-Hinweise integriert
 - Mobile-optimierte Darstellung
 
-✅ **Registrierungs-Seite**
+ **Registrierungs-Seite**
 - Streamlined Registrierungsprozess
 - Automatische Superadmin-Erkennung für tobi196183@gmail.com
 - Validierung und Fehlerbehandlung
 - Benutzerfreundliche Formular-Gestaltung
 
-✅ **Dashboard**
+ **Dashboard**
 - Personalisierte Übersicht für alle Benutzertypen
 - Superadmin-spezifische Bereiche
 - Responsive Design für alle Geräte
@@ -43,37 +43,37 @@ Diese umfassende Wireframe-Dokumentation definiert die komplette Architektur und
 
 #### **Zu implementierende Seiten:**
 
-🔄 **Job Listings Seite**
+ **Job Listings Seite**
 - **Priorität:** Hoch
 - **Geschätzter Aufwand:** 1 Woche
 - **Hauptfunktionen:** Suche, Filter, Pagination, Responsive Cards
 - **Besonderheiten:** Echtzeit-Suche, Bookmark-Funktion
 
-🔄 **Job Detail Seite**
+ **Job Detail Seite**
 - **Priorität:** Hoch
 - **Geschätzter Aufwand:** 3 Tage
 - **Hauptfunktionen:** Vollständige Job-Informationen, Referral-CTA
 - **Besonderheiten:** Social Sharing, Referral-Bonus-Hervorhebung
 
-🔄 **Referral Submission Formular**
+ **Referral Submission Formular**
 - **Priorität:** Hoch
 - **Geschätzter Aufwand:** 1 Woche
 - **Hauptfunktionen:** Multi-Step-Formular, File-Upload, Validierung
 - **Besonderheiten:** Auto-Save, Smart-Defaults, Progress-Indicator
 
-🔄 **Meine Referrals Dashboard**
+ **Meine Referrals Dashboard**
 - **Priorität:** Mittel
 - **Geschätzter Aufwand:** 1 Woche
 - **Hauptfunktionen:** Status-Tracking, Statistiken, Filter
 - **Besonderheiten:** Real-time Updates, Interactive Timeline
 
-🔄 **Referrer Profil Seite**
+ **Referrer Profil Seite**
 - **Priorität:** Mittel
 - **Geschätzter Aufwand:** 4 Tage
 - **Hauptfunktionen:** Profil-Management, Spezialisierungen, Statistiken
 - **Besonderheiten:** Gamification-Elemente, Social Links
 
-🔄 **Superadmin Panel**
+ **Superadmin Panel**
 - **Priorität:** Niedrig (für MVP)
 - **Geschätzter Aufwand:** 1-2 Wochen
 - **Hauptfunktionen:** System-Management, Analytics, Bulk-Operations
@@ -82,35 +82,35 @@ Diese umfassende Wireframe-Dokumentation definiert die komplette Architektur und
 ### **Backend-API-Spezifikationen (Definiert)**
 
 #### **Authentifizierung & Benutzer-Management:**
-- ✅ POST /api/auth/register (implementiert)
-- ✅ POST /api/auth/login (implementiert)
-- 🔄 GET /api/users/profile
-- 🔄 PUT /api/users/profile
-- 🔄 POST /api/upload/profile-image
+- POST /api/auth/register (implementiert)
+- POST /api/auth/login (implementiert)
+- GET /api/users/profile
+- PUT /api/users/profile
+- POST /api/upload/profile-image
 
 #### **Job-Management:**
-- 🔄 GET /api/jobs (mit erweiterten Filtern)
-- 🔄 GET /api/jobs/{job_id}
-- 🔄 POST /api/jobs (Superadmin)
-- 🔄 PUT /api/jobs/{job_id} (Superadmin)
-- 🔄 DELETE /api/jobs/{job_id} (Superadmin)
+- GET /api/jobs (mit erweiterten Filtern)
+- GET /api/jobs/{job_id}
+- POST /api/jobs (Superadmin)
+- PUT /api/jobs/{job_id} (Superadmin)
+- DELETE /api/jobs/{job_id} (Superadmin)
 
 #### **Referral-Management:**
-- 🔄 POST /api/referrals
-- 🔄 GET /api/referrals
-- 🔄 GET /api/referrals/{referral_id}
-- 🔄 PUT /api/referrals/{referral_id}/status (Superadmin)
-- 🔄 POST /api/upload/resume
+- POST /api/referrals
+- GET /api/referrals
+- GET /api/referrals/{referral_id}
+- PUT /api/referrals/{referral_id}/status (Superadmin)
+- POST /api/upload/resume
 
 #### **Payment & Analytics:**
-- 🔄 GET /api/payments
-- 🔄 POST /api/payments/process (Superadmin)
-- 🔄 GET /api/analytics/dashboard
-- 🔄 GET /api/analytics/admin (Superadmin)
+- GET /api/payments
+- POST /api/payments/process (Superadmin)
+- GET /api/analytics/dashboard
+- GET /api/analytics/admin (Superadmin)
 
 ---
 
-## 🎨 **2. Design-System Spezifikation**
+## **2. Design-System Spezifikation**
 
 ### **Farbpalette und Branding**
 
@@ -305,7 +305,7 @@ Diese umfassende Wireframe-Dokumentation definiert die komplette Architektur und
 
 ---
 
-## 🔧 **3. Technische Implementierungsrichtlinien**
+## **3. Technische Implementierungsrichtlinien**
 
 ### **Frontend-Technologie-Stack**
 
@@ -322,43 +322,43 @@ Diese umfassende Wireframe-Dokumentation definiert die komplette Architektur und
 #### **Projekt-Struktur:**
 ```
 src/
-├── components/
-│   ├── common/
-│   │   ├── Button.jsx
-│   │   ├── Card.jsx
-│   │   ├── Input.jsx
-│   │   └── Modal.jsx
-│   ├── layout/
-│   │   ├── Header.jsx
-│   │   ├── Sidebar.jsx
-│   │   └── Footer.jsx
-│   └── features/
-│       ├── auth/
-│       ├── jobs/
-│       ├── referrals/
-│       └── profile/
-├── pages/
-│   ├── Login.jsx
-│   ├── Register.jsx
-│   ├── Dashboard.jsx
-│   ├── Jobs.jsx
-│   └── Referrals.jsx
-├── hooks/
-│   ├── useAuth.js
-│   ├── useApi.js
-│   └── useLocalStorage.js
-├── services/
-│   ├── api.js
-│   ├── auth.js
-│   └── storage.js
-├── utils/
-│   ├── constants.js
-│   ├── helpers.js
-│   └── validators.js
-└── styles/
-    ├── globals.css
-    ├── components.css
-    └── utilities.css
+ components/
+ common/
+ Button.jsx
+ Card.jsx
+ Input.jsx
+ Modal.jsx
+ layout/
+ Header.jsx
+ Sidebar.jsx
+ Footer.jsx
+ features/
+ auth/
+ jobs/
+ referrals/
+ profile/
+ pages/
+ Login.jsx
+ Register.jsx
+ Dashboard.jsx
+ Jobs.jsx
+ Referrals.jsx
+ hooks/
+ useAuth.js
+ useApi.js
+ useLocalStorage.js
+ services/
+ api.js
+ auth.js
+ storage.js
+ utils/
+ constants.js
+ helpers.js
+ validators.js
+ styles/
+ globals.css
+ components.css
+ utilities.css
 ```
 
 ### **Backend-Implementierung**
@@ -366,36 +366,36 @@ src/
 #### **Flask-Anwendungsstruktur:**
 ```
 app/
-├── __init__.py
-├── models/
-│   ├── __init__.py
-│   ├── user.py
-│   ├── job.py
-│   ├── referral.py
-│   └── payment.py
-├── api/
-│   ├── __init__.py
-│   ├── auth.py
-│   ├── jobs.py
-│   ├── referrals.py
-│   ├── payments.py
-│   └── admin.py
-├── services/
-│   ├── __init__.py
-│   ├── email_service.py
-│   ├── file_service.py
-│   ├── payment_service.py
-│   └── notification_service.py
-├── utils/
-│   ├── __init__.py
-│   ├── decorators.py
-│   ├── validators.py
-│   └── helpers.py
-└── templates/
-    └── emails/
-        ├── referral_confirmation.html
-        ├── status_update.html
-        └── payment_notification.html
+ __init__.py
+ models/
+ __init__.py
+ user.py
+ job.py
+ referral.py
+ payment.py
+ api/
+ __init__.py
+ auth.py
+ jobs.py
+ referrals.py
+ payments.py
+ admin.py
+ services/
+ __init__.py
+ email_service.py
+ file_service.py
+ payment_service.py
+ notification_service.py
+ utils/
+ __init__.py
+ decorators.py
+ validators.py
+ helpers.py
+ templates/
+ emails/
+ referral_confirmation.html
+ status_update.html
+ payment_notification.html
 ```
 
 #### **Datenbank-Migrations-Strategie:**
@@ -443,7 +443,7 @@ def downgrade():
 
 ---
 
-## 📊 **4. Implementierungs-Roadmap**
+## **4. Implementierungs-Roadmap**
 
 ### **Phase 1: Core Job Management (Woche 1-2)**
 
@@ -607,7 +607,7 @@ def downgrade():
 
 ---
 
-## 🎯 **5. Qualitätssicherung und Testing-Strategie**
+## **5. Qualitätssicherung und Testing-Strategie**
 
 ### **Frontend-Testing**
 
@@ -772,7 +772,7 @@ class ReferralPortalUser(HttpUser):
 
 ---
 
-## 📈 **6. Erfolgsmetriken und KPIs**
+## **6. Erfolgsmetriken und KPIs**
 
 ### **Technische Metriken**
 
@@ -815,7 +815,7 @@ class ReferralPortalUser(HttpUser):
 
 ---
 
-## 🚀 **7. Deployment und Go-Live Strategie**
+## **7. Deployment und Go-Live Strategie**
 
 ### **Staging-Umgebung Setup**
 
@@ -941,18 +941,18 @@ T+7 Tage: Wöchentlicher Status-Report und Optimierungsplan
 
 ---
 
-## 📋 **8. Zusammenfassung und nächste Schritte**
+## **8. Zusammenfassung und nächste Schritte**
 
 ### **Wireframe-Dokumentation Status**
 
 #### **Vollständig dokumentiert:**
-✅ **Frontend-Wireframes:** 7 Hauptseiten mit detaillierten Layouts
-✅ **Backend-API-Spezifikationen:** 25+ Endpunkte mit vollständiger Dokumentation
-✅ **User Journey Storyboards:** 4 Personas mit kompletten Workflows
-✅ **Design-System:** Umfassende Komponenten-Bibliothek
-✅ **Implementierungsrichtlinien:** Technische und architektonische Spezifikationen
-✅ **Testing-Strategien:** Unit, Integration und Performance-Tests
-✅ **Deployment-Pläne:** Vollständige CI/CD und Go-Live-Strategie
+ **Frontend-Wireframes:** 7 Hauptseiten mit detaillierten Layouts
+ **Backend-API-Spezifikationen:** 25+ Endpunkte mit vollständiger Dokumentation
+ **User Journey Storyboards:** 4 Personas mit kompletten Workflows
+ **Design-System:** Umfassende Komponenten-Bibliothek
+ **Implementierungsrichtlinien:** Technische und architektonische Spezifikationen
+ **Testing-Strategien:** Unit, Integration und Performance-Tests
+ **Deployment-Pläne:** Vollständige CI/CD und Go-Live-Strategie
 
 #### **Implementierungsbereitschaft:**
 Das Argo Aviation Referral Portal ist vollständig spezifiziert und bereit für die Implementierung. Alle Wireframes, APIs und User Journeys sind detailliert dokumentiert und bieten eine solide Grundlage für die Entwicklung.

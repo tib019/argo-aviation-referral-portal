@@ -1,4 +1,4 @@
-# 🐳 Argo Aviation Referral Portal - Docker Deployment
+# Argo Aviation Referral Portal - Docker Deployment
 
 ## Schnellstart
 
@@ -33,25 +33,25 @@ open http://localhost:8000
 docker-deploy.bat
 ```
 
-## 🚀 Zugriff
+## Zugriff
 
 **URL:** http://localhost:8000
 
 **Admin-Login:**
-- 📧 Email: `admin@argo-aviation.com`
-- 🔑 Passwort: `admin123`
+- Email: `admin@argo-aviation.com`
+- Passwort: `admin123`
 
-## 📊 Features
+## Features
 
-✅ **Vollständige Flask-App** mit allen Features  
-✅ **Argo Aviation Corporate Design**  
-✅ **Benutzer-Registrierung & Login**  
-✅ **Job-Portal** mit Luftfahrt-Stellen  
-✅ **Referral-System** mit Bonus-Tracking  
-✅ **Admin-Dashboard** mit Statistiken  
-✅ **Responsive Design** für alle Geräte  
+ **Vollständige Flask-App** mit allen Features
+ **Argo Aviation Corporate Design**
+ **Benutzer-Registrierung & Login**
+ **Job-Portal** mit Luftfahrt-Stellen
+ **Referral-System** mit Bonus-Tracking
+ **Admin-Dashboard** mit Statistiken
+ **Responsive Design** für alle Geräte
 
-## 🛠️ Verwaltung
+## ️ Verwaltung
 
 ```bash
 # Status prüfen
@@ -71,7 +71,7 @@ docker-compose down -v
 docker-compose up -d
 ```
 
-## 🔧 Konfiguration
+## Konfiguration
 
 ### Environment-Variablen
 ```bash
@@ -88,7 +88,7 @@ ports:
   - "3000:8000"  # Ändere 3000 zu gewünschtem Port
 ```
 
-## 📦 Produktions-Deployment
+## Produktions-Deployment
 
 ### Mit Nginx Reverse Proxy
 ```bash
@@ -103,7 +103,7 @@ export FLASK_ENV=production
 docker-compose up -d
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### App startet nicht
 ```bash
@@ -127,14 +127,14 @@ docker-compose down -v
 docker-compose up -d
 ```
 
-## 📋 Systemanforderungen
+## Systemanforderungen
 
 - **Docker:** Version 20.10+
 - **Docker Compose:** Version 2.0+
 - **RAM:** Mindestens 512MB
 - **Speicher:** 1GB freier Speicherplatz
 
-## 🌐 Öffentliches Deployment
+## Öffentliches Deployment
 
 ### Railway
 ```bash
@@ -155,7 +155,7 @@ heroku container:release web
 doctl apps create --spec .do/app.yaml
 ```
 
-## 📞 Support
+## Support
 
 Bei Problemen:
 1. Logs prüfen: `docker-compose logs -f`
@@ -164,4 +164,4 @@ Bei Problemen:
 
 ---
 
-**🚀 Viel Erfolg mit dem Argo Aviation Referral Portal!**
+** Viel Erfolg mit dem Argo Aviation Referral Portal!**

@@ -1,12 +1,12 @@
-# 🎭 Argo Aviation Referral Portal - User Journey Storyboard & Workflows
+# Argo Aviation Referral Portal - User Journey Storyboard & Workflows
 
-## 🎯 Übersicht
+## Übersicht
 
 Diese Dokumentation beschreibt die kompletten Benutzer-Journeys und Workflows für das Argo Aviation Referral Portal. Sie definiert verschiedene Benutzertypen, deren Ziele und die optimalen Pfade durch das System, um eine intuitive und effiziente Benutzererfahrung zu gewährleisten.
 
 ---
 
-## 👥 **1. Benutzer-Personas & Ziele**
+## **1. Benutzer-Personas & Ziele**
 
 ### **Persona 1: Der Erfahrene Referrer (Max Mustermann)**
 **Hintergrund:** Senior Software Engineer mit 8 Jahren Berufserfahrung, großes berufliches Netzwerk, bereits 5 erfolgreiche Referrals in anderen Unternehmen.
@@ -82,7 +82,7 @@ Diese Dokumentation beschreibt die kompletten Benutzer-Journeys und Workflows f�
 
 ---
 
-## 🗺️ **2. Haupt-User-Journeys**
+## ️ **2. Haupt-User-Journeys**
 
 ### **Journey 1: Erste Registrierung und Onboarding (Anna Schmidt)**
 
@@ -424,7 +424,7 @@ Tobias startet seinen Arbeitstag und möchte das Referral-Portal überwachen, ne
 
 ---
 
-## 🔄 **3. Workflow-Diagramme**
+## **3. Workflow-Diagramme**
 
 ### **Workflow 1: Referral-Submission-Prozess**
 
@@ -435,7 +435,7 @@ Tobias startet seinen Arbeitstag und möchte das Referral-Portal überwachen, ne
            ↓
 [Formular-Validierung]
            ↓
-    [Gültig?] ──Nein──→ [Fehlermeldung anzeigen] ──→ [Zurück zum Formular]
+ [Gültig?] Nein→ [Fehlermeldung anzeigen] → [Zurück zum Formular]
            ↓ Ja
 [Datei-Upload (optional)]
            ↓
@@ -473,7 +473,7 @@ Tobias startet seinen Arbeitstag und möchte das Referral-Portal überwachen, ne
            ↓
 [Dashboard-Update für Referrer]
            ↓
-    [Status = "Eingestellt"?] ──Nein──→ [Workflow beendet]
+ [Status = "Eingestellt"?] Nein→ [Workflow beendet]
            ↓ Ja
 [Bonus-Berechtigung prüfen]
            ↓
@@ -493,7 +493,7 @@ Tobias startet seinen Arbeitstag und möchte das Referral-Portal überwachen, ne
            ↓
 [Zahlungsinformationen validieren]
            ↓
-    [Daten vollständig?] ──Nein──→ [Aufforderung zur Vervollständigung]
+ [Daten vollständig?] Nein→ [Aufforderung zur Vervollständigung]
            ↓ Ja
 [Zahlung in Queue einreihen]
            ↓
@@ -501,7 +501,7 @@ Tobias startet seinen Arbeitstag und möchte das Referral-Portal überwachen, ne
            ↓
 [Zahlung verarbeiten]
            ↓
-    [Erfolgreich?] ──Nein──→ [Fehler-Behandlung] ──→ [Retry-Mechanismus]
+ [Erfolgreich?] Nein→ [Fehler-Behandlung] → [Retry-Mechanismus]
            ↓ Ja
 [Zahlungsbestätigung senden]
            ↓
@@ -512,7 +512,7 @@ Tobias startet seinen Arbeitstag und möchte das Referral-Portal überwachen, ne
 
 ---
 
-## 📱 **4. Multi-Device Journey Considerations**
+## **4. Multi-Device Journey Considerations**
 
 ### **Desktop-Experience (Primär für detaillierte Aufgaben)**
 
@@ -558,7 +558,7 @@ Tobias startet seinen Arbeitstag und möchte das Referral-Portal überwachen, ne
 
 ---
 
-## 🎯 **5. Conversion-Optimierung Strategien**
+## **5. Conversion-Optimierung Strategien**
 
 ### **Onboarding-Optimierung**
 
@@ -603,7 +603,7 @@ Tobias startet seinen Arbeitstag und möchte das Referral-Portal überwachen, ne
 
 ---
 
-## 📊 **6. Metriken und KPIs für Journey-Optimierung**
+## **6. Metriken und KPIs für Journey-Optimierung**
 
 ### **Acquisition-Metriken**
 
@@ -663,7 +663,7 @@ Tobias startet seinen Arbeitstag und möchte das Referral-Portal überwachen, ne
 
 ---
 
-## 🔄 **7. Kontinuierliche Optimierung und A/B-Testing**
+## **7. Kontinuierliche Optimierung und A/B-Testing**
 
 ### **Testing-Prioritäten**
 
@@ -695,7 +695,7 @@ Tobias startet seinen Arbeitstag und möchte das Referral-Portal überwachen, ne
 
 ---
 
-## 🎭 **8. Edge Cases und Fehlerbehandlung**
+## **8. Edge Cases und Fehlerbehandlung**
 
 ### **Technische Edge Cases**
 

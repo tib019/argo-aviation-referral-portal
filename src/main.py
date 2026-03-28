@@ -8,16 +8,16 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 try:
     # Try to import the simple app first
     from app_simple import app
-    print("✅ Successfully loaded app_simple.py")
+ print(" Successfully loaded app_simple.py")
 except ImportError as e:
-    print(f"❌ Failed to import app_simple: {e}")
+ print(f" Failed to import app_simple: {e}")
     try:
         # Fallback to the main app
         from app import create_app
         app = create_app()
-        print("✅ Successfully loaded main app")
+ print(" Successfully loaded main app")
     except ImportError as e2:
-        print(f"❌ Failed to import main app: {e2}")
+ print(f" Failed to import main app: {e2}")
         # Create a minimal fallback app
         from flask import Flask
         app = Flask(__name__)
@@ -38,7 +38,7 @@ except ImportError as e:
             </html>
             '''
         
-        print("✅ Created fallback app")
+ print(" Created fallback app")
 
 if __name__ == '__main__':
     # Configure for production deployment

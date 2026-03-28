@@ -97,7 +97,7 @@ try:
                     
                     db.session.commit()
                     
-                app.logger.info('✅ Argo Aviation Referral Portal initialized successfully')
+ app.logger.info(' Argo Aviation Referral Portal initialized successfully')
                 
             except Exception as e:
                 app.logger.error(f'Database initialization error: {e}')
