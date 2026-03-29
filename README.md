@@ -6,11 +6,11 @@
 [![Azure](https://img.shields.io/badge/Azure-Deployed-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-Ein professionelles **Mitarbeiter-Referral-Portal** fuer die Argo Aviation GmbH, entwickelt als IHK-Abschlussprojekt 2025.
+Mitarbeiter-Referral-Portal für die Argo Aviation GmbH, entwickelt als IHK-Abschlussarbeit 2025. Ermöglicht Mitarbeitern, Kandidaten für offene Stellen zu empfehlen, und gibt HR-Teams ein vollständiges Dashboard zur Verwaltung aller Empfehlungen.
 
 ---
 
-## Projektueberblick
+## Projektüberblick
 
 | Eigenschaft | Details |
 |---|---|
@@ -29,23 +29,32 @@ Ein professionelles **Mitarbeiter-Referral-Portal** fuer die Argo Aviation GmbH,
 - Rollenbasierte Zugriffskontrolle (Mitarbeiter, HR, Admin)
 - Referral-Einreichung mit Lebenslauf-Upload
 - Status-Tracking in Echtzeit
-- HR-Dashboard fuer vollstaendige Verwaltung aller Empfehlungen
-- E-Mail-Benachrichtigungen bei Statusaenderungen
+- HR-Dashboard für vollständige Verwaltung aller Empfehlungen
+- E-Mail-Benachrichtigungen bei Statusänderungen
 - Responsive Design im Argo Aviation Corporate Design
-- Docker-Support fuer einfaches Deployment
+- Docker-Support für einfaches Deployment
 - Azure-Integration (Azure SQL, App Service, DevOps)
 
 ---
 
 ## Quick Start
 
+### Lokal (ohne Docker)
 
+```bash
+git clone https://github.com/tib019/argo-aviation-referral-portal.git
+cd argo-aviation-referral-portal
+pip install -r requirements.txt
+python app.py
+```
 
-Die Anwendung ist dann unter http://localhost:5000 erreichbar.
+Die Anwendung ist dann unter `http://localhost:5000` erreichbar.
 
 ### Docker
 
-
+```bash
+docker-compose up --build
+```
 
 ---
 
@@ -60,11 +69,21 @@ Die Anwendung ist dann unter http://localhost:5000 erreichbar.
 
 ---
 
+## Tests
+
+```bash
+pytest tests/ -v
+```
+
+58 Tests (Unit, Funktions-, Regressionstests) mit SQLite in-memory Datenbank.
+
+---
+
 ## Dokumentation
 
 | Dokument | Beschreibung |
 |---|---|
-| FINAL_PROJECT_REPORT.md | Vollstaendiger Projektbericht (DE) |
+| FINAL_PROJECT_REPORT.md | Vollständiger Projektbericht (DE) |
 | FINAL_PROJECT_REPORT_EN.md | Full Project Report (EN) |
 | DEVELOPMENT.md | Entwicklungsrichtlinien |
 | DOCKER_DEPLOYMENT.md | Docker-Deployment-Anleitung |
@@ -74,12 +93,12 @@ Die Anwendung ist dann unter http://localhost:5000 erreichbar.
 
 ## Autor
 
-**Tobias** - [@tib019](https://github.com/tib019)
+**Tobias Buss** — [@tib019](https://github.com/tib019)
 
-Entwickelt als **IHK-Abschlussarbeit 2025** fuer die Argo Aviation GmbH.
+Entwickelt als IHK-Abschlussarbeit 2025 für die Argo Aviation GmbH.
 
 ---
 
 ## Lizenz
 
-MIT License - siehe LICENSE fuer Details.
+MIT License — siehe [LICENSE](LICENSE) für Details.
