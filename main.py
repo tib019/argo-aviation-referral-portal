@@ -11,8 +11,8 @@ import os
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'argo-aviation-secret-key-2024'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///argo_referral.db'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'argo-aviation-secret-key-2024')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:////tmp/argo_referral.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -798,7 +798,9 @@ def init_db():
             db.session.commit()
             print("Sample jobs added successfully!")
 
+# Initialize DB on module load (required for Vercel serverless)
+init_db()
+
 if __name__ == '__main__':
-    init_db()
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=False)
