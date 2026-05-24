@@ -80,12 +80,19 @@ def create_app(config_class=Config):
     app.register_blueprint(main_bp)
     app.register_blueprint(api_bp, url_prefix='/api')
 
-    # KORREKTUR 6: CORS für API-Zugriff (falls benötigt)
+    # KORREKTUR 6: CORS für API-Zugriff (nur erlaubte Origins)
+    _allowed_origins = set(
+        os.environ.get('ALLOWED_ORIGINS', 'http://localhost:3000,http://localhost:5173').split(',')
+    )
+
     @app.after_request
     def after_request(response):
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-        response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+        from flask import request as _req
+        origin = _req.headers.get('Origin', '')
+        if origin in _allowed_origins:
+            response.headers.add('Access-Control-Allow-Origin', origin)
+            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+            response.headers.add('Access-Control-Allow-Methods', 'GET,POST,OPTIONS')
         return response
 
     return app
