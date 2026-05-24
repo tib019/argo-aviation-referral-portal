@@ -12,7 +12,7 @@ from flask import Flask
 # Basis-Flask-App als Fallback
 def create_fallback_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'fallback-secret-key'
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', os.urandom(24).hex())
     
     @app.route('/')
     def home():

@@ -14,7 +14,7 @@ import sendgrid
 from sendgrid.helpers.mail import Mail, Email, To, Content
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'argo-aviation-secret-key-2024'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', os.urandom(24).hex())
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///argo_referral.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
