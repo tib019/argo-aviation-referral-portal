@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements-dev.txt
+
+      - name: Tests
+        # SECRET_KEY ist seit dem Security-Fix Pflicht; hier ein Wegwerf-Wert
+        # ausschliesslich fuer den CI-Lauf.
+        env:
+          SECRET_KEY: ci-test-only-not-a-real-secret
+        run: pytest tests/ -q
