@@ -1,5 +1,8 @@
 # Argo Aviation Referral Portal
 
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
+![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
+
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-2.3-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
