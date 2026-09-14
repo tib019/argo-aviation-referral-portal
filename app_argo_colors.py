@@ -10,7 +10,14 @@ import os
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'argo-aviation-secret-key-2024'
+_secret_key = os.environ.get('SECRET_KEY')
+if not _secret_key:
+    raise RuntimeError(
+        "SECRET_KEY ist nicht gesetzt. Ohne eigenen Schluessel lassen sich "
+        "Flask-Session-Cookies faelschen und beliebige Accounts uebernehmen. "
+        "SECRET_KEY in der Umgebung setzen (siehe .env.example)."
+    )
+app.config['SECRET_KEY'] = _secret_key
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///argo_referral.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 

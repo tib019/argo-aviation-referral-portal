@@ -1,5 +1,5 @@
 ﻿# app/__init__.py - KORRIGIERTE VERSION
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
@@ -80,12 +80,21 @@ def create_app(config_class=Config):
     app.register_blueprint(main_bp)
     app.register_blueprint(api_bp, url_prefix='/api')
 
-    # KORREKTUR 6: CORS für API-Zugriff (falls benötigt)
+    # CORS: nur explizit freigegebene Origins statt '*'.
+    # Wildcard erlaubte jeder fremden Seite, die API-Antworten dieser App
+    # im Browser auszulesen. Erlaubte Origins kommagetrennt in CORS_ORIGINS.
+    allowed_origins = {
+        o.strip() for o in os.environ.get('CORS_ORIGINS', '').split(',') if o.strip()
+    }
+
     @app.after_request
     def after_request(response):
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-        response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+        origin = request.headers.get('Origin')
+        if origin and origin in allowed_origins:
+            response.headers['Access-Control-Allow-Origin'] = origin
+            response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
+            response.headers['Access-Control-Allow-Methods'] = 'GET,PUT,POST,DELETE,OPTIONS'
+        response.headers.add('Vary', 'Origin')
         return response
 
     return app

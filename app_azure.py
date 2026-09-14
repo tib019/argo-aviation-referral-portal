@@ -12,7 +12,14 @@ from flask import Flask
 app = Flask(__name__)
 
 # Basis-Konfiguration
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
+_secret_key = os.environ.get('SECRET_KEY')
+if not _secret_key:
+    raise RuntimeError(
+        "SECRET_KEY ist nicht gesetzt. Ohne eigenen Schluessel lassen sich "
+        "Flask-Session-Cookies faelschen und beliebige Accounts uebernehmen. "
+        "SECRET_KEY in der Umgebung setzen (siehe .env.example)."
+    )
+app.config['SECRET_KEY'] = _secret_key
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
