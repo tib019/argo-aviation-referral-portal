@@ -6,7 +6,7 @@
 [![Azure](https://img.shields.io/badge/Azure-Deployed-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-Mitarbeiter-Referral-Portal für die Argo Aviation GmbH, entwickelt als IHK-Abschlussarbeit 2025. Ermöglicht Mitarbeitern, Kandidaten für offene Stellen zu empfehlen, und gibt HR-Teams ein vollständiges Dashboard zur Verwaltung aller Empfehlungen.
+Mitarbeiter-Referral-Portal für die Argo Aviation GmbH, entstanden während des Praktikums im Rahmen der IHK-Umschulung (05/2025 - 11/2025). Ermöglicht Mitarbeitern, Kandidaten für offene Stellen zu empfehlen, und gibt HR-Teams ein vollständiges Dashboard zur Verwaltung aller Empfehlungen.
 
 ---
 
@@ -19,7 +19,7 @@ Mitarbeiter-Referral-Portal für die Argo Aviation GmbH, entwickelt als IHK-Absc
 | **Datenbank** | Azure SQL Database / SQLite (lokal) |
 | **Deployment** | Azure App Service, Docker, Railway |
 | **CI/CD** | Azure DevOps Pipelines |
-| **Kontext** | IHK-Abschlussarbeit 2025 |
+| **Kontext** | Praxisprojekt im Praktikum bei Argo Aviation (IHK-Umschulung) |
 
 ---
 
@@ -95,7 +95,13 @@ pytest tests/ -v
 
 **Tobias Buss** — [@tib019](https://github.com/tib019)
 
-Entwickelt als IHK-Abschlussarbeit 2025 für die Argo Aviation GmbH.
+Entwickelt für die Argo Aviation GmbH während des Praktikums im Rahmen der
+IHK-Umschulung zum Fachinformatiker Anwendungsentwicklung.
+
+> Hinweis: Dieses Projekt ist **nicht** die IHK-Abschlussarbeit. Das Abschlussprojekt
+> ist das [ArgoTicketTool](https://github.com/tib019/ArgoTicketTool) (Abschluss 01/2026,
+> Softwareprojekt mit 81 von 100 Punkten bewertet). Das Referral-Portal war ursprünglich
+> dafür vorgesehen, wurde für den Prüfungsrahmen aber zu umfangreich.
 
 ---
 
